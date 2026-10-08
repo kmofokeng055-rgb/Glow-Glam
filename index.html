@@ -1,84 +1,607 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glow & Glam Salon | Demo</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow & Glam Salon | Demo</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<nav class="navbar">
-<a class="logo" href="#home">Glow & Glam</a>
-<button class="menu-toggle">☰</button>
-<div class="nav-links">
-<a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a>
-<a href="#booking">Appointments</a><a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
 
-<div class="demo-banner">DEMO WEBSITE — Created for portfolio/content purposes.</div>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
 
-<section id="home" class="hero">
-<div class="hero-content">
-<p class="eyebrow">BEAUTY • STYLE • CONFIDENCE</p>
-<h1>Look good.<br><span>Feel amazing.</span></h1>
-<p>Professional beauty services for your next special look, self-care day or everyday glow.</p>
-<a class="btn" href="#booking">Book an Appointment</a>
-</div>
-</section>
+            <a href="#home" class="logo">
+                Glow & Glam
+            </a>
 
-<section id="services" class="section">
-<div class="section-heading"><p class="eyebrow">OUR SERVICES</p><h2>Beauty services & pricing</h2><p>Choose a service and book your preferred date and time.</p></div>
-<div class="service-grid">
-<article class="service-card"><img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=900&q=80"><div><h3>Wig Installation</h3><p>Professional wig installation and styling.</p><strong>R3,500</strong></div></article>
-<article class="service-card"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80"><div><h3>Make Up</h3><p>Glam makeup for events, photos and special occasions.</p><strong>R1,000</strong></div></article>
-<article class="service-card"><img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=900&q=80"><div><h3>Eye Lashes</h3><p>Beautiful lashes to complete your look.</p><strong>R500</strong></div></article>
-<article class="service-card"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"><div><h3>Manicure</h3><p>Neat, polished nails with a professional finish.</p><strong>R1,000</strong></div></article>
-</div>
-</section>
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
 
-<section id="gallery" class="section gallery-section">
-<div class="section-heading"><p class="eyebrow">OUR WORK</p><h2>Beauty inspiration</h2></div>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=80">
-<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80">
-<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80">
-<img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=1000&q=80">
-</div>
-</section>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#booking">Appointments</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-<section id="booking" class="section booking-section">
-<div class="section-heading"><p class="eyebrow">BOOK ONLINE</p><h2>Make your appointment</h2><p>Choose your service, date and time below.</p></div>
-<form id="bookingForm" class="booking-form">
-<div class="form-grid">
-<label>Full Name<input id="name" required placeholder="Your full name"></label>
-<label>Phone Number<input id="phone" type="tel" required placeholder="071 234 5678"></label>
-<label>Email Address<input id="email" type="email" required placeholder="you@example.com"></label>
-<label>Service<select id="service" required>
-<option value="">Select a service</option>
-<option>Wig Installation — R3,500</option><option>Make Up — R1,000</option>
-<option>Eye Lashes — R500</option><option>Manicure — R1,000</option>
-</select></label>
-<label>Date<input id="date" type="date" required></label>
-<label>Time<input id="time" type="time" required></label>
-</div>
-<label>Notes / special requests<textarea id="notes" rows="4" placeholder="Anything we should know?"></textarea></label>
-<button class="btn" type="submit">Submit Appointment</button>
-<div id="bookingMessage" class="message"></div>
-</form>
-</section>
+        </nav>
+    </header>
 
-<section id="contact" class="section contact-section">
-<div><p class="eyebrow">VISIT US</p><h2>Find the salon</h2>
-<p><strong>123 ABC Street</strong><br>Johannesburg, South Africa</p>
-<p>Call: 071 000 0000<br>Email: hello@glowandglam.co.za</p></div>
-<div class="map-wrap"><iframe title="Map showing 123 ABC Street, Johannesburg"
-src="https://www.google.com/maps?q=123%20ABC%20Street%2C%20Johannesburg%2C%20South%20Africa&output=embed" loading="lazy"></iframe></div>
-</section>
 
-<footer>© 2026 Glow & Glam Salon — Demo website by KaraboWebsite.</footer>
-<script src="script.js"></script>
+    <!-- DEMO NOTICE -->
+    <div class="demo-banner">
+        DEMO WEBSITE — Created for portfolio/content purposes.
+    </div>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                BEAUTY • STYLE • CONFIDENCE
+            </p>
+
+            <h1>
+                Look good.<br>
+                <span>Feel amazing.</span>
+            </h1>
+
+            <p>
+                Professional beauty services for your next special look,
+                self-care day or everyday glow.
+            </p>
+
+            <a href="#booking" class="btn">
+                Book an Appointment
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                OUR SERVICES
+            </p>
+
+            <h2>
+                Beauty Services & Pricing
+            </h2>
+
+            <p>
+                Choose a service and book your preferred date and time.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <!-- WIG INSTALLATION -->
+            <article class="service-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=900&q=80"
+                    alt="Wig installation"
+                >
+
+                <div>
+
+                    <h3>
+                        Wig Installation
+                    </h3>
+
+                    <p>
+                        Professional wig installation and styling
+                        for a beautiful and confident look.
+                    </p>
+
+                    <strong>
+                        R3,500
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- MAKEUP -->
+            <article class="service-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80"
+                    alt="Makeup service"
+                >
+
+                <div>
+
+                    <h3>
+                        Make Up
+                    </h3>
+
+                    <p>
+                        Professional makeup for events,
+                        photoshoots and special occasions.
+                    </p>
+
+                    <strong>
+                        R1,000
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- EYELASHES -->
+            <article class="service-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=900&q=80"
+                    alt="Eyelash service"
+                >
+
+                <div>
+
+                    <h3>
+                        Eye Lashes
+                    </h3>
+
+                    <p>
+                        Beautiful lashes to complete
+                        your overall beauty look.
+                    </p>
+
+                    <strong>
+                        R500
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- MANICURE -->
+            <article class="service-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                    alt="Manicure service"
+                >
+
+                <div>
+
+                    <h3>
+                        Manicure
+                    </h3>
+
+                    <p>
+                        Professional manicure with a
+                        clean and polished finish.
+                    </p>
+
+                    <strong>
+                        R1,000
+                    </strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                OUR WORK
+            </p>
+
+            <h2>
+                Beauty Inspiration
+            </h2>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=80"
+                alt="Salon beauty look"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80"
+                alt="Makeup beauty look"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=80"
+                alt="Manicure"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=1000&q=80"
+                alt="Eyelashes"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- ONLINE APPOINTMENT BOOKING -->
+    <section id="booking" class="section booking-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                BOOK ONLINE
+            </p>
+
+            <h2>
+                Make Your Appointment
+            </h2>
+
+            <p>
+                Complete the form below and submit your appointment request.
+            </p>
+
+        </div>
+
+
+        <!-- WEB3FORMS FORM -->
+        <form
+            id="bookingForm"
+            class="booking-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+        >
+
+            <!-- WEB3FORMS ACCESS KEY -->
+            <input
+                type="hidden"
+                name="access_key"
+                value="4762f848-b63f-4b6e-8ceb-f2db4dd25996"
+            >
+
+
+            <!-- EMAIL SUBJECT -->
+            <input
+                type="hidden"
+                name="subject"
+                value="New Glow & Glam Salon Appointment"
+            >
+
+
+            <!-- NAME SHOWN AS SENDER -->
+            <input
+                type="hidden"
+                name="from_name"
+                value="Glow & Glam Salon Website"
+            >
+
+
+            <!-- REDIRECT AFTER SUBMISSION -->
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://kmofokeng055-rgb.github.io/Glow-Glam/?booking=success#booking"
+            >
+
+
+            <!-- HONEYPOT SPAM PROTECTION -->
+            <input
+                type="checkbox"
+                name="botcheck"
+                style="display:none"
+            >
+
+
+            <div class="form-grid">
+
+
+                <!-- NAME -->
+                <label>
+                    Full Name
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </label>
+
+
+                <!-- PHONE -->
+                <label>
+                    Phone Number
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="071 234 5678"
+                        required
+                    >
+
+                </label>
+
+
+                <!-- EMAIL -->
+                <label>
+                    Email Address
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+                <!-- SERVICE -->
+                <label>
+                    Select Service
+
+                    <select
+                        name="service"
+                        required
+                    >
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="Wig Installation - R3500">
+                            Wig Installation — R3,500
+                        </option>
+
+                        <option value="Make Up - R1000">
+                            Make Up — R1,000
+                        </option>
+
+                        <option value="Eye Lashes - R500">
+                            Eye Lashes — R500
+                        </option>
+
+                        <option value="Manicure - R1000">
+                            Manicure — R1,000
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <!-- DATE -->
+                <label>
+                    Preferred Date
+
+                    <input
+                        type="date"
+                        name="appointment_date"
+                        required
+                    >
+
+                </label>
+
+
+                <!-- TIME -->
+                <label>
+                    Preferred Time
+
+                    <input
+                        type="time"
+                        name="appointment_time"
+                        required
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- SPECIAL REQUESTS -->
+            <label>
+                Special Requests / Notes
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us anything we should know about your appointment..."
+                ></textarea>
+
+            </label>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="btn"
+            >
+                Submit Appointment
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- LOCATION / CONTACT -->
+    <section id="contact" class="section contact-section">
+
+        <div>
+
+            <p class="eyebrow">
+                VISIT US
+            </p>
+
+            <h2>
+                Find Glow & Glam
+            </h2>
+
+            <p>
+                <strong>
+                    123 ABC Street
+                </strong>
+                <br>
+                Johannesburg, South Africa
+            </p>
+
+            <br>
+
+            <p>
+                <strong>
+                    Phone:
+                </strong>
+                071 000 0000
+            </p>
+
+            <p>
+                <strong>
+                    Email:
+                </strong>
+                hello@glowandglam.co.za
+            </p>
+
+        </div>
+
+
+        <!-- GOOGLE MAP -->
+        <div class="map-wrap">
+
+            <iframe
+                title="Glow & Glam Salon location"
+                src="https://www.google.com/maps?q=123%20ABC%20Street%2C%20Johannesburg%2C%20South%20Africa&output=embed"
+                loading="lazy"
+                allowfullscreen
+            >
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Glow & Glam Salon —
+            Demo website by KaraboWebsite.
+        </p>
+
+    </footer>
+
+
+    <!-- MOBILE MENU + SUCCESS MESSAGE -->
+    <script>
+
+        /* MOBILE MENU */
+
+        const menuButton =
+            document.querySelector(".menu-toggle");
+
+        const navigation =
+            document.querySelector(".nav-links");
+
+
+        if (menuButton) {
+
+            menuButton.addEventListener("click", function () {
+
+                navigation.classList.toggle("open");
+
+            });
+
+        }
+
+
+        /* CLOSE MOBILE MENU AFTER CLICKING A LINK */
+
+        document
+            .querySelectorAll(".nav-links a")
+            .forEach(function(link) {
+
+                link.addEventListener("click", function() {
+
+                    navigation.classList.remove("open");
+
+                });
+
+            });
+
+
+        /* SHOW SUCCESS MESSAGE AFTER WEB3FORMS REDIRECT */
+
+        const urlParams =
+            new URLSearchParams(window.location.search);
+
+        if (urlParams.get("booking") === "success") {
+
+            const bookingSection =
+                document.getElementById("booking");
+
+            const message =
+                document.createElement("div");
+
+            message.style.background = "#e5f6ea";
+            message.style.color = "#216437";
+            message.style.padding = "15px";
+            message.style.borderRadius = "10px";
+            message.style.marginBottom = "20px";
+            message.style.fontWeight = "bold";
+
+            message.textContent =
+                "✅ Your appointment request has been submitted successfully! We will contact you to confirm your appointment.";
+
+            bookingSection
+                .querySelector(".booking-form")
+                .prepend(message);
+
+        }
+
+
+        /* PREVENT CUSTOMERS FROM SELECTING A PAST DATE */
+
+        const dateInput =
+            document.querySelector('input[name="appointment_date"]');
+
+        if (dateInput) {
+
+            const today =
+                new Date().toISOString().split("T")[0];
+
+            dateInput.min = today;
+
+        }
+
+    </script>
+
 </body>
 </html>
